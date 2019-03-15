@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      h1 {
+        background-color: green;
+        color: wheat;
+        text-align: center;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>DOM</h1>
+    <p id="mptag">my p tag</p>
+    <p>second p tag</p>
+
+    <script>
+      var p1 = document.createElement("p");
+      var p2 = document.createElement("p");
+      var p3 = document.createElement("p");
+      var p4 = document.createElement("p");
+      var p5 = document.createElement("p");
+      var body = document.getElementsByTagName("body")[0];
+
+
+
+      var pTagsArr = [p1, p2, p3, p4, p5];
+      for (var i = 0; i < pTagsArr.length; i++) {
+        var txtNode = document.createTextNode("This is a p tag from js");
+        var tag = pTagsArr[i];
+        tag.appendChild(txtNode);
+        tag.style.color = "blue";
+        body.appendChild(tag);
+      }
+
+      //Scopes
+    </script>
+  </body>
+</html>
