@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>
+    contact manager
+  </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+</head>
+
+  <h1> JAVASCRIPT</h1>
+    <script>
+    /*
+  Assignment: Contact manager
+  */
+  // TO DO: Complete the program
+  /*
+  Welcome to your contacts manager!
+  1: List contacts
+  2: Add a contact
+  0: Quit
+  */
+
+  console.log("Welcome to your contacts manager!");
+  do {
+      console.log("1: List contacts");
+      console.log("2: Add a contact");
+      console.log("0: Quit");
+      var Person = {
+      //initialize the personalbar
+      init: function(last, first,middle,address){
+          this.last = last;
+          this.first = first;
+          this.middle=middle;
+          this.address=address;
+      },
+      //Describe of peoples
+      describe: function(){
+          var description = "Last name: " + this.last + ", first name: " + this.first + ", Phone Number: " + this.middle + ",Address:"+this.address;
+
+          return description;
+      }
+  };
+  var person1 = Object.create(Person);
+  person1.init("Nchimunya", "Banda","096746754","kabulonga");
+  var person2 = Object.create(Person);
+  person2.init("Onanji", "Jere","0975757534","ibex");
+  var person3;
+
+  function addNewPerson (last, first,middle,address){
+      person3 = Object.create(Person);
+  //  last = prompt("Enter last name for person: ");
+  //  first = prompt("Enter first name for person: ");
+  //  middle=prompt("Enter Phone Number");
+      person3.init(last, first,middle,address);
+
+
+
+  }
+  var peoples = [];
+  peoples.push(person1);
+  peoples.push(person2);
+  peoples.push(person3);
+
+
+  function listPeople(){
+      peoples.forEach(function(people){
+          console.log(people.describe());
+      });
+  }
+
+      var nmbr = prompt("Enter your digit(1, 2 or 0):");
+      var choice = parseInt(nmbr);
+      switch(choice){
+          case 1 :
+              console.log("Here`s the list of all your contacts: ");
+              listPeople();
+              break;
+          case 2 :
+              last = prompt("Enter last name for person: ");
+              first = prompt("Enter first name for person: ");
+              middle=prompt("Enter Your Phone Number:");
+
+              address=prompt("Enter Your Address:");
+              addNewPerson(last, first,middle,address);
+              break;
+          default:
+              break;
+      }
+  }
+  while (choice != 0);
+
+    </script>
+</body>
