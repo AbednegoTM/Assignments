@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Contacts List</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+<h1>Welcome to My Contacts </h1>
+<p>Here you can add and view a list using the firefox web developer console!</p>
+<script>
+    console.log("Welcome to your contacts manager!");
+    do {
+        console.log("1: List contacts");
+        console.log("2: Add a contact");
+        console.log("3: Quit");
+        var Person = {
+        //initialize the personalbar
+        init: function(last, first,address,phone){
+            this.last = last;
+            this.first = first;
+            this.address = address
+            this.phone = phone 
+        },
+        //Describe of peoples
+        describe: function(){
+            var description = "Last name: " + this.last + ", first name: " + this.first + ", address: " + this.address + ", phone: " + this.phone 
+            return description;
+        }
+    };
+    var person1 = Object.create(Person);
+    person1.init("Banda", "Sam","Plot 65 Woodlands","0978654321");
+    var person2 = Object.create(Person);
+    person2.init("Mulenga", "Jane","Plot 09 Kabulonga","0965432186");
+    var person3;
+    var people = [];
+    people.push(person1);
+    people.push(person2);
+    function listPeople(){
+        people.forEach(function(people){
+            console.log(people.describe());
+        });
+    }
+    function addNewPerson (last, first,address,phone){
+        person3 = Object.create(Person);
+     last = prompt("Enter last name for person: ");
+     first = prompt("Enter first name for person: ");
+     address = prompt("Enter address of the person")
+     phone = prompt("Enter phone number of the person")
+        person3.init(last, first, address, phone);
+        var arrayPush = people.push(person3);
+        return arrayPush;
+    }
+        var nmbr = prompt("Enter your digit(1, 2 or 3): ");
+        var choice = parseInt(nmbr);
+        switch(choice){            
+          case 1 : 
+                console.log("Here`s the list of all your contacts: ");
+                listPeople();
+                break;
+            case 2 : 
+               last = prompt("Enter last name for person: ");
+               first = prompt("Enter first name for person: ");
+               address = prompt("Enter address of the person")
+               phone = prompt("Enter phone number of the person")
+                console.log("New person added..")
+                addNewPerson(last, first, address, phone);
+                break;
+            default:
+                break;
+        
+        }
+    } 
+    while (choice != 3);
+</script>
+</body>
+</html>
