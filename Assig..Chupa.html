@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM</title>
+    <meta charset="utf-8">
+  </head>
+
+    <script>
+
+  // create a contact array
+contacts = [];
+// create a constructor function
+function Person(firstName, contactDetails, address){
+	this.first 		= firstName || "Enter first name for person: ";
+	this.last 		= contactDetails || "Enter contact details for person: ";
+	this.contact 	= address || "Enter address for person: ";
+}
+// use input routine for use with object constructor
+function userInput( inputs ){
+	for(ui in inputs){
+		do{
+					var iData = prompt( inputs[ui],"");
+		}while( iData.length==0);
+		inputs[ui] = iData;
+	}
+	return inputs;
+}
+
+
+
+// main process function for control of buttons.
+function process( fm ){
+	var action = isNaN( fm ) ? fm.getAttribute("data-button") : fm;
+	console.log("> "+(fm.value || fm) +" : " + action);
+	switch( action - 0 ){
+		case 0:// load
+			if( localStorage.getItem("contacts-list") ) contacts = JSON.parse( localStorage.getItem("contacts-list"));
+		break;
+
+	case 1: // List contacts
+		if( contacts.length ){
+		for(var str="",c=0; c<contacts.length; c++){
+			str += (c+1) + ".";
+				for( cd in contacts[c] ){
+					str += "[" + cd + "]: " + contacts[c][cd] + "\t";
+				}
+				str += "\r\n";
+			}
+		}else{
+			str = "No contacts";
+		}
+		target.display.value = str;
+	break;
+
+	case 2: // add person
+		contacts.push( userInput( new Person() ) );
+		process(1);
+	break;
+
+	case 3: // remove person
+      target.display.value = "Require admin login to delete...\r\n\r\nInput Code\r\n";
+			var code = prompt("Code");
+			if(localStorage.getItem("secure")===code){
+				process(1);
+				var n = prompt("Delete entry by entry number :") - 1;
+				var c = confirm("Contact: " + (n+1) +" : "+contacts[n].first+" "+contacts[n].last+"\r\n"+contacts[n].contact+"\r\nWill be removed");
+				if( c ) contacts.splice( n,1);
+				process(5);
+			}
+
+	break;
+
+	case 4: // clear screen
+			target.display.value = defaultDisplay;
+	break;
+
+	case 5: // save
+			target.display.value = "saved";
+			var save = JSON.stringify( contacts );// stringify the contacts in the list
+			localStorage.setItem("contacts-list",save); // save the data to localStorage Object
+			process(0); // now load data.
+			process(1); // now display data
+	break;
+
+
+	break;
+
+	default:
+			process(4); // clear the display as default.
+
+}
+
+}
+
+
+window.onload = function(){
+	target = document.forms.contacts;
+	defaultDisplay = target.display.value;
+	process(0); // auto load any saved contacts.
+}
+    </script>
+  <body>
+    <form name="contacts" action="javascript:;" >
+  		<input name="action" type="button" value="Load" data-button="0" onclick="process( this );"><br>
+  		<textarea name="display" cols="80" rows="20">Welcome to your contacts manager!</textarea><br>
+  		<input name="action" type="button" value="Show contacts" data-button="1" onclick="process( this );">
+  		<input name="action" type="button" value="Add new contact" data-button="2" onclick="process( this );">
+  		<input name="action" type="button" value="Remove contact" data-button="3" onclick="process( this );">
+      <input name="action" type="button" value="Save" data-button="5" onclick="process(this);">
+	</form>
+
+  </body>
+</html>
