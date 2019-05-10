@@ -1,0 +1,712 @@
+/*unversal_styles*/
+body{
+	margin:0px;
+	font-family:sans-serif;
+
+}
+.green{
+	color:#bdd537;
+}
+.orange{
+	color:#fb8033;
+}
+P{
+	margin:0px;
+	padding:0px;
+	
+}
+center {
+	color:#6a7577;
+}
+ img{
+	 padding: 0%;
+	 margin: 0%;
+	 border: 0%;
+ }
+
+
+@media screen and (min-width:902px) {
+	/* heading_div*/
+		/*heading_section_styles*/
+	.navbotton{
+		display:inline;
+		word-spacing:5px;
+		color:white;
+		}
+	#navbar{
+		float:right; 
+		position:relative; 
+		top:0px; 
+		text-transform:
+		capitalize;}  
+	#heading_section{
+		color:white;
+		width:100%;
+		height:400px;
+		background-image: url("../images/wot-masthead-dark.jpg");
+		background-repeat:none;
+		background-size:100%  400px;
+		border-bottom:25px;
+		border-color:#f0f0f0;
+		border-style:solid;
+
+	}
+	#last_navbotton{
+		margin-right:20px;
+	}
+	#label{
+		margin-left:350px;
+		height: 290px;
+		width:650px
+	} 
+	#fifth_label_span{
+		background-color:#bdd537;
+		padding:5px 120px;
+		border-radius:30px;
+		color:white;
+		margin-left:90px;
+		display: inline-block;
+		margin-top:15px
+	}
+	#second_label_span{
+	 font-size:130px;
+	 padding:-20px;
+	  }
+	hr{
+		display:inline-block ;
+	}
+	#label_block{
+		font-size:20px;
+		position:relative;bottom:3px;
+		 font-weight:10px;
+		}
+	#first_label_span{
+		position: relative;
+		top:40px;
+		font-size:25px;
+
+	}
+	#logo{
+	 margin:19px  40px;
+	 height:35px
+	}
+	#thrid_label_span{
+		color:#fb8033;
+	}
+	#fourth_label_span{
+		color:#bdd537; 
+	} 
+
+/* subheading styles */
+
+	#subheading{
+		background-color: #f0f0f0;
+		font-size: 30px;
+	}
+	button{
+		background-color:#bdd537 ;
+		padding:5px 120px ;
+		border-radius:30px;
+		color:white;
+		margin-left:100px;
+		border-color:#bdd537 
+	}
+	#subheadingfooter_p{
+		font-size:30px;
+		margin-top:20px;
+	}
+	#subheading_p{
+		font-size:14px;
+		margin-bottom:15px;
+
+	}
+	/*article_div styles */
+	#article_div {
+		background-color: #f0f0f0;
+		padding-top: 25px;
+		padding-bottom: 15px;
+	}
+
+/*icon section */
+
+	#icons{
+		background-color:white;
+		border-style:solid;
+		border-color:white;
+		border:30px 0px 70px;
+		padding-bottom:45px;
+		padding-top:20px;
+		
+	}
+	#icon{
+		border-style:solid;
+		border-color:white;
+		border:0px 0px 70px;
+		color:#949fa5;
+	}
+	#first_icon{
+		display:inline-block;
+		background-color:white;
+		padding:30px;
+		color:#949fa5;
+	}
+	#icon1{
+		font-size:5px;
+	}
+	#second_icon{
+		border-left-style:solid;
+		border-right-style:solid;
+		border-color:#f0f0f0;
+		display:inline-block;
+		background-color:white;
+		padding:30px;
+		color:#949fa5;
+	}
+	#thrid_icon{
+		display:inline-block;
+		background-color:white;
+		padding:30px;
+		color:#949fa5;	
+	}
+	#cc{font-size:10px;}
+	#aa {
+		font-size: 10px;
+	}
+	#bb {
+			font-size: 10px;
+	}
+	.icon_p{
+		font-size:12px;	
+	}
+	/* article styles*/
+
+	#article{
+		width:100%;
+		background-color: #f0f0f0;
+		height:480px;
+		padding-top:40px;
+		color:#44656c;
+	}
+	#ppp{
+		font-size:30px;
+		color:#44656c;
+	}
+	#pppp{
+		font-size:12px;
+		color:#44656c;
+		margin-bottom:15px;
+
+	}
+
+
+	.twin{
+		width:40%;
+		display: inline-block;
+		margin:0px;
+		background-color:#f0f0f0;
+	}
+	.p{
+		display:inline-block;
+		width:285px;
+		text-align:center;
+		color: #466872;
+		font-weight: 1000px
+	}
+	#fp{
+		background-color:white;
+		margin-top:10px;
+		border-style: solid;
+		border-color:white;
+		border-width:30px;
+		
+		}
+	#sp{
+		background-color:white;
+		margin-top:10px;
+		border-style: solid;
+		border-color:white;
+		border-width:30px;
+
+		}
+	#tp{
+		background-color:white;
+		margin-top:10px;
+		border-style: solid;
+		border-color:white;
+		border-width:30px;
+
+		}
+
+
+	#ffp{
+		background-color:white;
+		margin-top:10px;
+		border-style: solid;
+		border-color:white;
+		border-width:30px;
+
+	}
+	#ssp{
+		background-color:white;
+		margin-top:10px;
+		border-style: solid;
+		border-color:white;
+		border-width:30px
+	}
+
+	.t{
+		color: grey;
+		font-size: 12px
+	}
+	.conButton{
+		background-color:#bdd537 ;
+		border-radius:30px;
+		color:white;
+		border-color:#bdd537;
+		padding:5px 50px;
+		margin-left:100px;
+		display: inline-block;
+		margin-top:10px;
+		}
+		
+	/* contact center */
+	.contact_center{
+		margin:0px;
+		width: 100%;
+		height:50px;
+		background-color:#f0f0f0;
+	
+	}
+	#photo_grid{
+		width:100%;
+		
+	}
+	.images{
+		width:33%;
+	}
+
+	/*footer styles*/ 
+	/*footer heading*/
+	#footer_heading{
+		text-align:center;
+		font-size:30px;
+		color:#6a7577;
+		background-color:white;
+	}
+
+	#footerP{
+		margin:0px;
+		padding:20px 0px;
+		background-color: #ffffff;
+	}
+	/* contacting section */
+	#contacting_section{ 
+		background-color:#3f666d ;
+		padding:50px;
+		color: white;
+		font-size:20px;
+	}
+	/* dual photo grid */
+
+	#first_grid_pic{ 
+		background-image: url("../images/wilmington.jpg");
+		background-repeat:none;
+		 background-size:cover;
+		  color:white;
+		}
+	#second_grid_pic{ 
+		background-image: url("../images/asheville.jpg");
+		background-repeat:none;
+		background-size:cover;
+		 color:white;
+	}
+	#f_Photo{
+		font-size:25px;
+		display:inline-block;
+		font-weight:bold;
+		
+
+	}
+	#s_photo{
+		font-size:25px;
+		font-weight:bold;
+
+		
+	}
+	#p1{ 
+		margin:50px 0px 0px  40px ;
+		display:inline-block;
+		background-color: black;
+		padding :10px 50px 10px 10px;
+		opacity:0.7;
+	}
+	#p2{
+		margin :50px  0px 0px  40px;
+		display:inline-block;
+		background-color:black;
+		padding:10px 50px 10px 10px;
+		opacity:0.7;
+	}
+	
+	.grid_p{
+		font-size:11px;
+	
+	}
+	#mm{
+		visibility: hidden;
+	}
+
+	.dual{
+		width:50%;
+		height:400px;
+		display:inline-block;
+	}
+
+}	
+
+@media screen and (max-width:902px) {
+	  *{overflow:visible;}
+	  
+
+		/* heading_div*/
+		/*heading_section_styles*/
+		.navbotton {
+			 list-style-type:none;
+			word-spacing: 5px;
+			color: white;
+		}
+
+		#navbar {
+			
+			position: relative;
+			top: 0px;
+			text-transform:
+				capitalize;
+		}
+
+		#heading_section {
+			color: white;
+			width: 100%;
+			height: 500px;
+			background-image: url("../images/wot-masthead-dark.jpg");
+			background-repeat: none;
+			background-size: 100% 500px;
+			border-bottom: 25px;
+			border-color: #f0f0f0;
+			border-style: solid;
+
+		}
+
+		#last_navbotton {
+			margin-right: 20px;
+		}
+
+		#label {
+			overflow: visible;
+		}
+
+		#fifth_label_span {
+			background-color: #bdd537;
+			border-radius: 30px;
+			color: white;
+			border-color: #bdd537;
+			padding: 5px 50px;
+			display: inline-block;
+			}
+		
+
+		#second_label_span {
+			font-size:70px;
+		}
+		
+
+		
+
+		#label_block {
+			font-size: 20px;
+			font-weight:bold;
+		}
+
+		#first_label_span {
+			top: 40px;
+			font-size: 20px;
+
+		}
+
+		#logo {
+			height:35px;
+		}
+
+		#thrid_label_span {
+			color: #fb8033;
+		}
+
+		#fourth_label_span {
+			color: #bdd537;
+		}
+
+		/* subheading styles */
+
+		#subheading {
+			background-color: #f0f0f0;
+			font-size: 15px;
+		}
+
+		button {
+			background-color: #bdd537;
+			color: white;
+			border-color: #bdd537
+		}
+
+		#subheadingfooter_p {
+			font-size: 12px;
+		}
+
+		#subheading_p {
+			font-size: 12px;
+		
+		}
+
+		/*article_div styles */
+		#article_div {
+			background-color: #f0f0f0;
+			padding-top: 25px;
+			padding-bottom: 15px;
+		}
+
+		/*icon section */
+
+		#icons {
+			background-color: white;
+			border-style: solid;
+			border-color: white;
+			border: 30px 0px 70px;
+			padding-bottom: 45px;
+			padding-top: 20px;
+		}
+
+		#icon {
+			border-style: solid;
+			border-color: white;
+			border: 0px 0px 70px;
+			color: #949fa5;
+		}
+
+		#first_icon {
+			display: inline-block;
+			background-color: white;
+			padding: 30px;
+			color: #949fa5;
+		}
+
+		#icon1 {
+			font-size: 5px;
+		}
+
+		#second_icon {
+		
+			border-color: #f0f0f0;
+			display: inline-block;
+			background-color: white;
+			padding: 30px;
+			color: #949fa5;
+		}
+
+		#thrid_icon {
+			display: inline-block;
+			background-color: white;
+			padding: 30px;
+			color: #949fa5;
+		}
+
+		#cc {
+			font-size: 10px;
+		}
+
+		#aa {
+			font-size: 10px;
+		}
+
+		#bb {
+			font-size: 10px;
+		}
+
+		.icon_p {
+			font-size: 12px;
+		}
+
+		/* article styles*/
+
+		#article {
+			background-color: #f0f0f0;
+			height: 480px;
+			color: #44656c;
+		}
+
+		#ppp {
+			font-size: 30px;
+			color: #44656c;
+		}
+
+		#pppp {
+			font-size: 12px;
+			color: #44656c;
+		
+
+		}
+
+
+		.twin {
+			background-color: #f0f0f0;
+		}
+
+		.p {
+			width: 285px;
+			color: #466872;
+			border-style: solid;
+			border-color:#f0f0f0;
+		}
+
+		#fp {
+			background-color: white;
+			
+		}
+
+		#sp {
+			background-color: white;
+		
+		}
+
+		#tp {
+			background-color: white;
+			
+		}
+
+
+		#ffp {
+			background-color: white;
+			
+		}
+
+		#ssp {
+			background-color: white;
+		}
+			
+
+		.t {
+			color: grey;
+			font-size: 12px
+		}
+
+		.conButton {
+			background-color: #bdd537;
+			color: white;
+			border-color: #bdd537;
+		
+		}
+		.conButton {
+			background-color: #bdd537;
+			border-radius: 30px;
+			color: white;
+			border-color: #bdd537;
+			padding: 5px 50px;
+			margin-left:50px;
+			display: inline-block;
+		}
+
+		/* contact center */
+		.contact_center {
+			margin: 0px;
+			width: 100%;
+			height: 50px;
+			background-color: #f0f0f0;
+
+		}
+
+		#photo_grid {
+			width: 100%;
+
+		}
+		.images{
+			width:100%
+		}
+
+		/*footer styles*/
+		/*footer heading*/
+		#footer_heading {
+		
+			color: #6a7577;
+			background-color: white;
+		}
+
+		#footerP {
+			margin: 0px;
+		
+			background-color: #ffffff;
+		}
+
+		/* contacting section */
+		#contacting_section {
+			background-color: #3f666d;
+	
+			color: white;
+			font-size: 20px;
+		}
+
+		/* dual photo grid */
+
+		#first_grid_pic {
+			background-image: url("../images/wilmington.jpg");
+			background-repeat: none;
+			background-size: cover;
+			color: white;
+		}
+
+		#second_grid_pic {
+			background-image: url("../images/asheville.jpg");
+			background-repeat: none;
+			background-size: cover;
+			color: white;
+		}
+
+		#f_Photo {
+			font-size: 25px;
+			font-weight: bold;
+		}
+
+		#s_photo {
+			font-size: 25px;
+			font-weight: bold;
+
+
+		}
+
+		#p1 {
+			background-color: black;
+			opacity: 0.7;
+		}
+
+		#p2 {
+			background-color: black;
+			opacity: 0.7;
+		}
+
+		.grid_p {
+			font-size: 11px;
+
+		}
+
+		#mm {
+			visibility: hidden;
+		}
+
+		.dual {
+			width: 50%;
+			height: 400px;
+		
+		}
+		hr{
+			visibility: hidden;
+		}
+	
+	}
