@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>conatct manager</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		button{
+			color:purple;
+			background: #ABED47;
+			border-style:inset;
+			border-top-right-radius: 30px;
+			border-top-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			border-bottom-left-radius: 30px;
+
+		}
+		small{
+			color:purple;
+
+		}
+	</style>
+</head>
+<body>
+	<h1>contact manager</h1>
+		<h2 style="color:purple"><i> enter your details</i> </h2>
+	<h3>view your  saved contacts via the console </h3>
+	<small>save your contact details</small>:
+	<button id="save">save</button><br /><br />
+	<small>view your saved contacts/refresh </small>:
+	<button id="view"> view/refresh </button><br /><br />
+	<small>remove contact by index number :</small>
+	<button id="remove">remove</button>
+
+
+
+	
+	<script type="text/javascript">
+		const save = document.getElementById('save');
+	    const view = document.getElementById('view');
+	    const remove = document.getElementById("remove");
+
+ let  details = [
+   
+
+   ]
+ let i = -1;
+ var newPerson = () => {
+  let conditions =prompt("1 to exit \n 2 to save your details")
+
+ if( conditions == 1  ){
+ 		 var fact = confirm("do you want to really exit") ;
+
+ 		if(fact == false){
+	 		let NAME = prompt("enter your name");
+			let ADRESS = prompt("enter your adress");
+			let LINE = prompt("enter your phone number");
+			 alert("contact details save");
+			 	var person = {
+   		
+   		name:NAME,
+   		adress:ADRESS,
+   		line:LINE
+   	 }
+   	 ++i;
+   	 details[i]=person;
+
+	}
+
+ 	}
+ 	
+	else if ( conditions == 2){
+		let NAME = prompt("enter your name");
+		let ADRESS = prompt("enter your adress") ;
+		let LINE = prompt("enter your phone number");
+		 alert("contact details save");
+		 	var person = {
+   		
+   		name:NAME,
+   		adress:ADRESS,
+   		line:LINE
+   	 }
+   	 ++i;
+   	 details[i]=person;	
+}
+
+else{
+	alert("invalid key enter");}
+      }
+   	const delite = ()=>{
+	    	 var one = prompt("enter your the index of the contact to be remove ");
+	    	 return details.splice(one,1);
+	    	}
+
+	    	
+
+   save.addEventListener("click",newPerson);
+    view.addEventListener("click",()=>{
+		console.clear()
+		console.log(details);})
+	remove.addEventListener("click",delite);
+	    
+
+
+		
+	</script>
+
+</body>
+</html>
+
+
